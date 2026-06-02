@@ -1,0 +1,34 @@
+# Generated build output
+/build/
+/dist/
+*.class
+*.war
+*.ear
+
+# Runtime output from the companion/probe
+/output/
+*.log
+
+# Secrets and local environment overrides
+.env
+.env.*
+!.env.example
+
+# IDE/editor metadata
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# macOS and filesystem metadata
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
