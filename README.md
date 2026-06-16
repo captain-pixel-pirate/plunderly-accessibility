@@ -29,21 +29,16 @@ It only reads information the game already makes available for accessibility and
 presents it in a more readable way. The whole change is reversible — the
 uninstaller removes the line (or the file) and restores any backup.
 
-### No gameplay advantage
-
-This accessibility companion gives you **no edge in the game**. It cannot touch gameplay,
-timing, puzzle inputs, or anything you do while playing.
-
-All it does is take the bonus scores already printed on a Duty Report, that are small and hard to read quickly. It
-also keeps a saved history so you can look back later. Every count it shows was
-already on your screen.
-
 ## Installation
 
 The easiest option is to download the prebuilt zip for your platform from the
 [**latest release**](../../releases/latest). Each zip includes the companion
 (`plunderly.jar`) and the installer. Unzip it, run the installer, and restart the
 game.
+
+If you would rather not run an installer script, download the standalone
+`plunderly.jar` from the latest release and follow the
+[manual installation guide](docs/manual-install.md).
 
 ### Windows
 
@@ -83,18 +78,6 @@ again if needed.
      switch for **Terminal** (or whichever terminal opened), quit and reopen it,
      then run the installer again. You can turn the switch back off afterward.
 3. Quit Puzzle Pirates if it's running, then launch it again.
-
-### Building from source instead
-
-To build it yourself, you need at least **JDK 21**:
-
-```bash
-./scripts/build.sh      # compiles src/ and produces dist/plunderly.jar
-```
-
-Then run the installer for your platform from `scripts/`, making sure
-`plunderly.jar` is **next to the installer script**. The installer expects the
-jar beside it.
 
 ## Uninstall
 
